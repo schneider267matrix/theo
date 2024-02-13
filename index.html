@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/965590611f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- hero image -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Welcome to Manchester</h1>
+      <h5 style="font-weight:lighter">One of the most warm and welcoming cities in the world.</h5>
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- top navigation bar -->
+  <div class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="lifestyle.html">Lifestyle</a>
+    <a href="events.html">Events</a>
+    <a href="about.html">About</a>
+    <a href="contacts.html">Contact Us</a>
+  </div>
+
+  <!-- side content -->
+  <div class="row">
+    <div class="side">
+      <h2>About Manchester</h2>
+      <h5>Location on map:</h5>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431776.0882861046!2d-4.464682481977316!3d53.472367904938444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a4d4c5226f5db%3A0xd9be143804fe6baa!2sManchester%2C%20UK!5e0!3m2!1sen!2sbw!4v1616507404744!5m2!1sen!2sbw"
+      width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <p>Manchester’s pioneering history accounts for its unique character –
+         this is the place where the industrial revolution really took hold.
+         The canals that course through the city are a reminder of its history of textiles and trade.
+      </p>
+      <p><a href="about.html">Click here to find out more about the City</a></p>
+      <h2>Newsletter</h2>
+      <p>
+        Receive all the latest updates from the City and all the agencies within it by subscribing
+        to the weekly newsletter of your choice.
+      </p>
+      <p style="color:darkred">Click the image below to subscribe:</p>
+      <a href="contacts.html">
+        <img src="images/news.jpg" alt="Newsletter" title="Subscribe for newsletter" style="width:100%">
+      </a>
+    </div>
+    <!-- main content -->
+    <div class="main">
+      <h2>Explore</h2>
+      <p style="text-align:center">
+            Manchester has a range of tourist attraction sites and places to visit. Famous sporting sites, art and culture sites,
+            alongside multicultural food choices make the visit worth it.
+      </p>
+      <!-- slideshow container -->
+      <section>
+        <img class="mySlides" src="images/art3.jpg" alt="Art" title="Art and Culture" style="width:100%">
+        <img class="mySlides" src="images/festival2.jpg" alt="Events" title="Events" style="width:100%">
+        <img class="mySlides" src="images/sport2.jpg" alt="Sports" title="Sports" style="width:100%" height="362px">
+        <img class="mySlides" src="images/music2.jpg" alt="Music and Nightlife" title="Music and Nightlife" style="width:100%">
+      </section>
+      <br>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      <br>
+
+      <!-- script for automatic slideshow -->
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot")
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        x[myIndex-1].style.display = "block";
+        dots[myIndex-1].className += " active";
+        setTimeout(carousel, 3000);  // change image every 3 seconds
+      }
+      </script>
+      <!-- end of script-->
+
+      <h2 style="text-align:center">Why Locals love Manchester</h2>
+      <p style="text-align:center">
+            Manchester was voted the <a href="https://www.manchestereveningnews.co.uk/news/greater-manchester-news/manchester-named-best-uk-city-15028362" target="_blank">
+            top UK city to live in for 2018</a> (based on <em>The Economist's Global Liveability Index</em>)
+            and <a href="https://www.roughguides.com/gallery/the-worlds-friendliest-cities-as-voted-by-you/" target="_blank">
+            one of the ten friendliest cities in the world</a> by <em>Rough Guides</em> readers,
+            there's not a moment to lose to go out and explore this busy, buzzing and modern metropolis.
+      </p>
+      <video  width="100%" height="362px" controls>
+        <source src="videos/manchester.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <a href="https://www.facebook.com/visitmanchester/" target="_blank">
+      <i style='font-size:24px' class='fab'>&#xf09a;</i>  <!--fb-->
+    </a>
+    <a href="https://twitter.com/visit_mcr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+      <i style='font-size:24px' class='fab'>&#xf099;</i>  <!--twt-->
+    </a>
+    <a href="https://www.instagram.com/visitmanchester/" target="_blank">
+      <i style='font-size:24px' class='fab'>&#xf16d;</i>  <!--inst-->
+    </a>
+    <br>
+    <br>
+    <!-- footer links -->
+    <a href="index.html">Home</a> |
+    <a href="about.html">About Us</a> |
+    <a href="lifestyle.html">Lifestyle</a> |
+    <a href="events.html">Events</a> |
+    <a href="contacts.html">Contact Us</a>
+  </footer>
+  
+</body>
+</html>

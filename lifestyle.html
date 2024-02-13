@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifestyle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/965590611f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- hero image -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Welcome to Manchester</h1>
+      <h5 style="font-weight:lighter">Find out more about the lifestyle in the City.</h5>
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- top navigation bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a class="active" href="lifestyle.html">Lifestyle</a>
+    <a href="events.html">Events</a>
+    <a href="about.html">About</a>
+    <a href="contacts.html">Contact Us</a>
+  </div>
+
+
+  <!-- side content -->
+  <div class="row">
+    <div class="side">
+      <h2>Sport</h2>
+
+      <!-- slideshow container -->
+      <section>
+        <img class="mySlides" src="images/ot2.jpg" alt="Old Trafford Stadium" title="Old Trafford Stadium" style="width:100%" height="300px">
+        <img class="mySlides" src="images/cricket.jpg" alt="Lancashire Cricket Club" title="Lancashire Cricket Club" style="width:100%" height="300px">
+        <img class="mySlides" src="images/run.jpg" alt="Great Manchester Run" title="Great Manchester Run" style="width:100%" height="300px">
+      </section>
+      <br>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+      <!-- script for automatic slideshow -->
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot")
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        x[myIndex-1].style.display = "block";
+        dots[myIndex-1].className += " active";
+        setTimeout(carousel, 3000);  // change image every 3 seconds
+      }
+      </script>
+      <!-- end of script -->
+      
+      <p>
+        Manchester has long been synonymous with football thanks to <a href="http://www.manutd.com/" target="_blank">Manchester United</a>
+        and <a href="http://www.mcfc.co.uk/" target="_blank">Manchester City</a> – but there’s much more to discover here.
+      </p>
+      <p>
+        Many of Europe’s best rugby league sides play close to Manchester, and you can watch national and international cricket at
+        <a href="http://www.lccc.co.uk/" target="_blank">Lancashire Cricket Club</a>, just outside the city centre.
+      </p>
+      <h5>List of other sports facilities and events to enjoy</h5>
+      <ul>
+        <li><a href="http://www.nationalcyclingcentre.com/">National Cycling Centre</a> at Sportcity - hire a bike and helmet to test the track.</li><br>
+        <li>Also at Sportcity - excellent tennis, squash, and athletics facilities</li><br>
+        <li><a href="http://www.chillfactore.com/">Chill Factore</a> - the UK's longest indoor real snow skiing and snowboarding slopes.</li><br>
+        <li>Great Manchester Run - the nation's favourite annual 10k running event</li><br>
+      </ul>
+
+      <h2>Clothes and Shopping</h2>
+      <img src="images/shop4.jpg" alt="Shopping Mall" title="Shopping Mall" width="100%" height="340px">
+      <p> Manchester is renowned for its shopping facilities, which encompass brilliant British designers,
+          established worldwide brands and quirky independent one-offs.
+      </p>
+      <p>
+        Market Street is the very definition of the modern British high street and a good starting point for any shopping trip.
+        You’ll find premium department stores <a href="http://www.harveynichols.com/" target="_blank">Harvey Nichols</a> and
+        <a href="http://www.selfridges.com/" target="_blank">Selfridges</a> at nearby Exchange Square, or head to Spinningfields,
+        Manchester’s most upmarket area for top designer emporia.
+      </p>
+      <p>
+        <a href="https://www.visitmanchester.com/shopping/northern-quarter-p25851" target="_blank">The Northern Quarter</a> is the place
+        for independent shops that you won’t find anywhere else and that embody Manchester’s creative diversity.
+      </p>
+      <p>
+        For a retail and leisure experience on a grander scale, take a short bus ride out of the city centre for the
+        <a href="https://traffordcentre.co.uk/" target="_blank">Trafford Centre</a>,
+        the second largest shopping centre in the UK.
+      </p>
+    </div>
+    <!-- end of side content -->
+
+    <!-- main content -->
+    <div class="main">
+      <h2>Art and Culture</h2>
+      <p>
+        Manchester is blessed with a thriving art and culture scene. It’s a breeding ground for independent spirits
+        and a beacon for international performances and productions.
+      </p>
+      <p>
+        Covering everything from modern art to classic masterpieces, from the campaign for social justice to the history of football,
+        the city has an impressive range of museums and galleries – and many are free, so you can keep going back for more.
+      </p>
+      <p>
+        If you’re a theatre or opera buff, you can enjoy everything from rousing arias to musicals hot from the West End,
+        as well as experimental theatre productions that challenge convention and delight the dramatic in you.
+      </p>
+
+      <h2>Museums</h2>
+      <br>
+      <!-- image gallery -->
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.museum.manchester.ac.uk/" target="_blank">
+            <img src="images/museum.jpg" alt="Manchester Museum" title="Manchester Museum" width="600" height="400">
+          </a>
+          <div class="desc">Explore ancient worlds at the Manchester Museum on-campus at the University of Manchester.</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.mosi.org.uk/" target="_blank">
+            <img src="images/mosi.jpg" alt="Museum of Science and Industry" title="Museum of Science and Industry" width="600" height="400">
+          </a>
+          <div class="desc">See innovation brought to life at the Museum of Science and Industry.</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.iwm.org.uk/visits/iwm-north" target="_blank">
+            <img src="images/iwm.jpg" alt="Imperial War Museum North" title="Imperial War Museum North" width="600" height="400">
+          </a>
+          <div class="desc">Discover how war shapes people’s lives at the Imperial War Museum North.</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.phm.org.uk/" target="_blank">
+            <img src="images/phm.jpg" alt="People's History Museum" title="People's History Museum" width="600" height="400">
+          </a>
+          <div class="desc">Explore the history of democracy and the ‘common man’ at the People's History Museum.</div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+      <!-- end of muesuem gallery -->
+      
+      <br>
+      <br>
+      <br>
+
+      <h2>Galleries and Libraries</h2>
+
+      <!-- image gallery -->
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.manchestergalleries.org/" target="_blank">
+            <img src="images/gallery.jpg" alt="Manchester Art Gallery" title="Manchester Art Gallery" width="600" height="400">
+          </a>
+          <div class="desc">View important classic and contemporary art at the Manchester Art Gallery.</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.whitworth.manchester.ac.uk/" target="_blank">
+            <img src="images/whitworth.jpg" alt="Whitworth Art Gallery" title="Whitworth Art Gallery" width="600" height="400">
+          </a>
+          <div class="desc">The Whitworth Art Gallery offers unique interior and outdoor artistic spaces and events.</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.library.manchester.ac.uk/rylands/" target="_blank">
+            <img src="images/jrl.jpg" alt="The John Rylands Research Institute and Library" title="The John Rylands Research Institute and Library"
+             width="600" height="400">
+          </a>
+          <div class="desc">The John Rylands Research Institute and Library is one of the world's finest collections of rare books and manuscripts,
+            owned by The University of Manchester.</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.manchester.gov.uk/centrallibrary" target="_blank">
+            <img src="images/mcl.jpg" alt="Manchester Central Library " title="Manchester Central Library "
+             width="600" height="400">
+          </a>
+          <div class="desc">Beautifully refurbished and restored, this grade II-listed landmark offers 21st century
+            library facilities in an awe-inspiring neoclassical setting.</div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+      <!-- end of gallery and library img gallery -->
+      <br>
+
+      <p style="font-size:20px; color: darkred">*You’ll also find many smaller permanent and pop-up galleries across the city.</p>
+      <br>
+      <br>
+
+      <h2>Theatres</h2>
+      <br>
+      <!-- image gallery -->
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.thelowry.com/" target="_blank">
+            <img src="images/lowry.jpg" alt="The Lowry" title="The Lowry" width="600" height="400">
+          </a>
+          <div class="desc">Theatre, exhibitions, comedy shows and family events galore at The Lowry.</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.royalexchange.co.uk/" target="_blank">
+            <img src="images/ret.jpg" alt="Royal Exchange Theatre" title="Royal Exchange Theatre" width="600" height="400">
+          </a>
+          <div class="desc">Everything from Shakespearian classics to the latest premieres at the Royal Exchange Theatre.</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.atgtickets.com/venues/opera-house-manchester/" target="_blank">
+            <img src="images/ohm.jpg" alt="Opera House Manchester" title="Opera House Manchester" width="600" height="400">
+          </a>
+          <div class="desc">From musicals to hit plays, this grand old theatre brings it all to Manchester.</div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a href="http://www.atgtickets.com/venues/palace-theatre-manchester/" target="_blank">
+            <img src="images/pt.jpg" alt="Palace Theatre" title="Palace Theatre" width="600" height="400">
+          </a>
+          <div class="desc">Catch the latest shows on tour at this Edwardian venue.</div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+      <!-- end of theatre img gallery -->
+      <br>
+      <br>
+
+      <h2>Music and Nightlife</h2>
+      <img src="images/music.jpg" alt="Music" title="Music" class="center" width="90%" height="300px">
+      <p>
+        Manchester boasts one of the liveliest music and nightlife scenes in the UK, with live music and club nights taking place across the city every day.
+      </p>
+
+      <h5>Live Music</h5>
+      <p>
+        Manchester produces and attracts some of the world’s biggest bands and DJs, as well as plenty of up-and-coming talent.
+      </p>
+      <p>Catch big names on international tours at:</p>
+      <ul>
+        <li><a href="http://www.manchester-arena.com/" target="_blank">Manchester Arena</a></li><br>
+        <li><a href="http://www.o2apollomanchester.co.uk/" target="_blank">O<sub>2</sub> Apollo</a></li><br>
+        <li><a href="http://www.alberthallmanchester.com/" target="_blank">Albert Hall</a></li><br>
+      </ul>
+
+      <h5>Classical Performances</h5>
+      <p>
+        Manchester is home to the world-famous <a href="http://www.halle.co.uk/" target="_blank">Hallé</a>
+        and <a href="http://www.bbc.co.uk/programmes/profiles/1jdlh7B05gZQ5Kqk93xl90/about-the-orchestra" target="_blank">BBC Philharmonic</a>
+        orchestras, which both perform at the purpose-built concert venue <a href="http://www.bridgewater-hall.co.uk/" target="_blank">Bridgewater Hall.
+      </p>
+      <p>
+      <p>
+        Leading chamber orchestra <a href="http://www.manchestercamerata.co.uk/" target="_blank">Manchester Camerata</a>
+        also performs there, as well as at the <a href="http://www.rncm.ac.uk/" target="_blank">Royal Northern College of
+        Music</a>, which stages a diverse programme of music.
+      </p>
+
+      <h5>Social Scene</h5>
+      <p>
+        Manchester's thriving nightlife covers a dazzling variety of clubs, bars and other nighttime venues.
+      </p>
+      <p>
+         <a href="http://www.thewarehouseproject.com/" target="_blank">The Warehouse Project</a> brings the world’s biggest dance acts to Manchester.
+         Recent headlining shows include Thom Yorke, Chic, Disclosure,
+         Rudimental and The Prodigy.
+      </p>
+      <p>
+         <a href="http://www.theprintworks.com/" target="_blank">The Printworks</a> is home to some of busiest and most popular venues,
+         such as Tiger Tiger, Hard Rock Cafe and Bierkeller.
+      </p>
+      <p>
+         <a href="http://www.canal-st.co.uk/" target="_blank">Canal Street</a> is a vibrant LGBT-friendly area,
+         where all are welcome to enjoy its many restaurants, bars and clubs.
+      </p>
+         Deansgate and the Locks offer glitz and glamour, while the <a href="http://northernquartermanchester.com/" target="_blank">Northern Quarter</a>
+         favours artistic independents.
+      </p>
+    </div>
+  </div>
+  <!-- end of main content -->
+
+  <!-- footer -->
+  <div class="footer">
+    <a href="https://www.facebook.com/visitmanchester/" target="_blank">
+      <i style='font-size:24px' class='fab'>&#xf09a;</i>  <!--fb-->
+    </a>
+    <a href="https://twitter.com/visit_mcr?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+      <i style='font-size:24px' class='fab'>&#xf099;</i>  <!--twt-->
+    </a>
+    <a href="https://www.instagram.com/visitmanchester/" target="_blank">
+      <i style='font-size:24px' class='fab'>&#xf16d;</i>  <!--inst-->
+    </a>
+    <br>
+    <br>
+    <!-- footer links -->
+    <a href="index.html">Home</a> |
+    <a href="about.html">About Us</a> |
+    <a href="lifestyle.html">Lifestyle</a> |
+    <a href="events.html">Events</a> |
+    <a href="contacts.html">Contact Us</a>
+  </footer>
+
+</body>
+</html>
